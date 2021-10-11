@@ -1,0 +1,8 @@
+<div class="container-fluid card">
+  <h2>Create Quote</h2>
+  <hr>
+  <form (ngSubmit)='submitQuote()' #quoteform='ngForm'>
+      <div class="form-group">
+        <label for="">Creator</label>
+        <input type="text" required class="form-control" id="creator" [(ngModel)]="newQuote.creator" name="creator" #creator ='ngModel' >
+      </div>
