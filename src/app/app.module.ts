@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 import { DetailsComponent } from './details/details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DateCountPipe } from './date-count.pipe';
     VotesComponent,
     FormComponent,
     DetailsComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
