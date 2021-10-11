@@ -15,6 +15,19 @@ export class QuotesComponent implements OnInit {
   
 
  ];
+      deleteQuote(toDelete, index){
+       if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+  }
+    createNewQuote(quote){
+      this.quotes.push(quote);
+
+    }
+    viewDetails(index){
+    this.quotes[index].showDetails =!this.quotes[index].showDetails;
+  }
+
 
 
   constructor() { }
