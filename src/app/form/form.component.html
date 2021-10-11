@@ -6,3 +6,25 @@
         <label for="">Creator</label>
         <input type="text" required class="form-control" id="creator" [(ngModel)]="newQuote.creator" name="creator" #creator ='ngModel' >
       </div>
+
+      {{newQuote.creator}}
+
+      <div class="form-group">
+        <label for="">Author</label>
+        <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.Author" name="author" #author ='ngModel'>
+      </div>
+
+      {{newQuote.Author}}
+
+      <div class="form-group">
+        <label for="Quote">Quote</label>
+        <textarea name="" class="form-control" id="quote" cols="5" rows="10" [(ngModel)]="newQuote.quote" name="quote" #quote ='ngModel'></textarea>
+      </div>
+
+      {{newQuote.quote}}
+      
+
+        <button type="submit" class="btn btn-success">Create</button>
+  </form>
+</div>
+
