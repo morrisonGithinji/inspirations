@@ -7,6 +7,8 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { VotesComponent } from './votes/votes.component';
 import { FormComponent } from './form/form.component';
 import { DetailsComponent } from './details/details.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { DetailsComponent } from './details/details.component';
     QuotesComponent,
     VotesComponent,
     FormComponent,
-    DetailsComponent
+    DetailsComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
