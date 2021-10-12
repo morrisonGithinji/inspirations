@@ -15,7 +15,7 @@ export class VotesComponent implements OnInit {
   }
 
   dislikeButtonClick(){
-    this.numberOfDislikes--;
+    this.numberOfDislikes++;
   }
 
   constructor() { }
