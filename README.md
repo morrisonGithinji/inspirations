@@ -18,5 +18,8 @@ This app was built on Angular and typescript
 
 ## Contact
 Morrison Njenga
+
 morrison.githinji@student.moringaschool.com
-##Link
+
+## Link
+https://morrisongithinji.github.io/inspirations/
