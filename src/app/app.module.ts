@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { VotesComponent } from './votes/votes.component';
-import { FormComponent } from './form/form.component';
+import { FormComponent } from './form/form';
 import { DetailsComponent } from './details/details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DateCountPipe } from './date-count.pipe';
-import { HighlightDirective } from './highlight.directive';
+import { HighlighterDirective } from './highlight.directive';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -19,12 +20,16 @@ import { HighlightDirective } from './highlight.directive';
     FormComponent,
     DetailsComponent,
     DateCountPipe,
-    HighlightDirective
+    HighlighterDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+
+    FormsModule,                               // <========== Add this line!
+    ReactiveFormsModule     
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

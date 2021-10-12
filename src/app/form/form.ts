@@ -2,7 +2,7 @@ import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
 @Component({
   selector: 'app-form',
-  templateUrl: './form.component.html',
+  templateUrl: './form.html',
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {

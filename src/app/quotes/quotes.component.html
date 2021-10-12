@@ -6,14 +6,14 @@
         <ul>
           <li  class="card quote" *ngFor='let quote of quotes; let i =index'>{{quote.quote}}
             <button (click)='viewDetails(i)' class="btn btn-outline-primary">View Details</button>
-            <app-quote-detail *ngIf='quote.showDetails' [quote]='quote'(toDelete) = 'deleteQuote($event, i)'> </app-quote-detail>
+            <app-details *ngIf='quote.showDetails' [quote]='quote'(toDelete) = 'deleteQuote($event, i)'> </app-details>
            
           </li> 
         </ul>
       </div>
   
       <div class="col-md-6">
-        <app-quote-form (createQuote)='createNewQuote($event)'></app-quote-form>
+        <app-form (createQuote)='createNewQuote($event)'></app-form>
       </div>
   
   </div>
