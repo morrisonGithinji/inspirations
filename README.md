@@ -23,3 +23,6 @@ morrison.githinji@student.moringaschool.com
 
 ## Link
 https://morrisongithinji.github.io/inspirations/
+
+## License
+https://github.com/morrisonGithinji/inspirations/blob/main/LICENSE
